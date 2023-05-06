@@ -1,0 +1,5 @@
+project repo
+
+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
+
+git clone https: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//@github.com/Gatjuat-Wicteat-Riek/project-files.git
