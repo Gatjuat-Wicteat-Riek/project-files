@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  popins, sans-serif;
+
+}
+.shop{
+    display: flex;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #131b23;
+    padding: 25px 60px;
+    color: #fff;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    position: sticky;
+    margin-bottom: 10px;
+
+}
+.cart{
+    position: relative;
+    background-color: #fff;
+    color: #131b23;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+}
+.bi-cart{
+    text-align: center;
+    font-size: 19px;
+}
+.cart-A{
+    position: absolute;
+    top: -10px;
+    right: -7px;
+    font-size: 16px;
+    background-color: crimson;
+    color: #fff;
+    border-radius: 4px;
+    padding: 3px;
+
+}
+
+.material{
+    padding: 30px 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 230px);
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    gap: 60px;
+    justify-content: center;
+    align-content: center;
+}
+@media(max-width: 1000px){
+    .material{
+        grid-template-columns: repeat(2, 230px);
+    }
+    button{
+        font-size: 10px;
+        padding: 10px 40px;
+        margin: 2px;
+        cursor: pointer;
+        background-color: black;
+        color: #fff;
+        transition: 0.1s ease;
+    
+        }
+}
+@media(max-width: 500px){
+    .material{
+        grid-template-columns: repeat(1, 230px);
+    }
+    button{
+        font-size: 10px;
+        padding: 5px 20px;
+        margin: 2px;
+        cursor: pointer;
+        background-color: black;
+        color: #fff;
+        transition: 0.1s ease;
+    
+        }
+        button:hover{
+            background-color: aqua;
+            font-size: 15px;
+            border: 2px;
+        }
+}
+img{
+    background-color: #40505e;
+}
+.items{
+    width: 110%;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgb(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+}
+.details h1{
+    font-size: 35px;
+    font-weight: 400;
+    color: rgb(37, 117, 148);
+
+}
+.details p{
+    font-size: 18px;
+    font-weight: 200;
+}
+.itms{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    align-items: center;
+    align-items: center;
+    padding: 0px 3px;
+}
+.decrement{
+    color: red;
+    font-size: 25px;
+    margin-bottom: 5px;
+    padding: 0px 3px;
+    cursor: pointer;
+}
+.increment{
+    cursor: pointer;
+    color: green;
+    font-size: 25px;
+
+}
+.quantity{
+    font: 20px;
+}
+.btnn{
+    text-align: center;
+    font-family: sans-serif;
+}
+button{
+    font-size: 18px;
+    padding: 10px 50px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+    transition: 0.2s ease;
+
+
+}
+button:hover{
+    background-color: aqua;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+

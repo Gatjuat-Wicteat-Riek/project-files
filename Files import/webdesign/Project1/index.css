@@ -1,0 +1,801 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+   
+}
+#nav{
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e0e1dd;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    height: 30px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    right: 0;
+
+}
+#close{
+    display: none;
+}
+.log{
+    color: orangered;
+    font-size: 35px;
+    cursor: pointer;
+    padding: 0px 20px;
+    padding-bottom: 20px;
+}
+.header{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+.header li{
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 0px 20px;
+    position: relative;
+}
+.header li a{
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+.header li a:hover,
+.header li a.active{
+    color: #088178;
+    
+}
+.header li a.active::after,
+.header li a:hover::after{
+    content: " ";
+    width: 30%;
+    height: 2px;
+    bottom: -4px;
+    left: 20px;
+    background:  #088178;
+    position: absolute;
+}
+#hero{
+background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)), url("backgim/b9.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top 25% right 0%;
+width: 100%;
+height: 90vh;
+padding: 0px 80px;
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+justify-content: center;
+font-weight: 400;
+
+}
+.section1{
+    padding: 40px 80px;
+}
+.section2{
+    padding: 40px 0px;
+}
+.itm{
+    color: #fff;
+    font-weight: 400;
+    
+}
+.itm h4{
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: orangered;
+}
+.itm h2,h1,h3{
+    padding-bottom: 10px;
+}
+.itm p{
+    padding-bottom: 10px;
+}
+.itm h1{
+    color: orangered;
+}
+.itm button{
+    border: 1px solid;
+    padding: 10px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #76c893;
+    color: #fff;
+    transition: 0.4s ease;
+
+}
+.itm button:hover{
+    background: #088178;
+    color: #cbf3f0;
+}
+#Feature{
+    padding: 40px 80px;
+}
+.cont{
+    width: 200px;
+    text-align: center;
+    padding: 25px 15px;
+    height: 40%;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.02);
+    border: 1px solid #e0e1dd;
+    margin: 15px;
+    border-radius: 5px;
+}
+.cont:hover{
+    box-shadow: 20px 20px 55px rgba(70, 62, 220, 0.2);
+    background: #f2e9e4;
+}
+
+.cont button{
+    padding: 10px 10px;
+    background: #76c893;
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.cont button:hover{
+    background: #088178;
+    color: orangered;
+}
+.cont img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#Feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 20px;
+}
+#product{
+    padding: 40px 80px;
+    text-align: center;
+
+}
+.fe-pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cbf3f0;
+    box-shadow: 20px 20px 34px #e0e1dd;
+    border-radius: 25px;
+    position: relative;
+}
+.fe-pro:hover{
+    box-shadow: 20px 20px 40px #e0e1dd;
+    background-color: #e8e8e4;
+}
+.fe-pro img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.dest{
+    text-align: start;
+    padding: 10px 0px;
+
+}
+#product h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+#product p{
+    padding: 20px 0px;
+    font-weight: 300;
+
+}
+
+.dest span{
+    color: orangered;
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 5px 0px;
+}
+.dest h5{
+    font-size: 15px;
+    color: #088178; 
+}
+.star{
+    font-size: 18px;
+    color: orange;
+}
+.dest h6{
+    font: 30px;
+    color: #1a1a1a;
+}
+.bi-cart{
+    color: #088178;
+    font-weight: bold;
+    background-color:#e8f6ea;
+    padding: 5px 5px;
+    border-radius: 50px;
+    border: 1px solid #cce7de;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 500;
+    bottom: 10px;
+    margin-left: 80px;
+    right: 10px;
+    position: absolute;
+    transition: 0.2s ease;
+    
+}
+.bi-cart:hover{
+    background-color: #088178;
+    color: #fff;
+}
+.pro-content{
+    padding: 20px 25px;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 20px;
+    row-gap: 25px;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 220px);
+}
+
+.head{
+    padding-bottom: 20px;
+    border-radius: 4px;
+    padding: 40px 80px;
+   
+
+}
+.head p{
+    color: #088178;
+    font-family: "popins";
+    font-size: 20px;
+    font-weight: 400;
+}
+.t-repair{
+    padding: 40px 80px;
+    text-align: center;
+    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)), url("repair/s78.jpg");
+    background-size: cover;
+    height: 50vh;
+}
+.repair{
+    padding: 80px 0px;
+    text-align: center;
+}
+.repair h4{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+.repair h3{
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.repair h3 span{
+    color: blue;
+}
+.butt{
+    padding: 10px 0px;
+}
+.repair button{
+    padding: 14px 12px;
+    border: 1px solid #fff;
+    color: #1a1a1a;
+    font-weight: bold;
+    background: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.repair button:hover{
+    color: #fff;
+    background: #088178;
+}
+#banner{
+    padding: 40px 105px;
+}
+
+
+.class-banner{
+    background-image: url(banner/b1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    justify-content: center;
+    height: 50vh;
+    min-width: 449px;
+    padding: 60px;
+    border-radius: 2px;
+    line-height: 30px;
+}
+
+.class-banner h4{
+    color: orangered;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.class-banner h2{
+    color: #088178;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px;
+}
+.class-banner p{
+    color: #1a1a1a;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px;
+}
+.class-banner button{
+    padding: 15px 15px;
+    border: 1px solid #fff;
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+#banner{
+    display: flex;
+   justify-content: space-between;
+   gap: 60px;
+}
+.s2{
+    background-image: url(banner/b5.jpg);
+   
+}
+.class-banner:hover button{
+    background: #088178;
+    border: 1px solid #088178;
+    color: #fff;
+}
+.c-ban{
+    background-image: url(banner/b8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    padding: 20px;
+    justify-content: center;
+    height: 30vh;
+    min-width: 29.3%;
+    padding-bottom: 20px;
+}
+#banner1{
+    padding: 40px 105px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.c-ban h2{
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 550px;
+    color: #fff;
+}
+.c-ban h4{
+    padding: 10px;
+    font-size: 20px;
+    color: red;
+}
+ .s22{
+    background-image: url(banner/b4.jpg);
+   
+}
+.s33{
+    background-image: url(newarr/n4.jpg);
+}
+.s33 h2{
+    color: #fff;
+
+}
+
+.s33 h4{
+    color: red;
+
+}
+.s22 h4{
+    color: red;
+}
+#ban-shoe{
+    padding: 40px 105px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.shoe{
+    background-image: url(watches/s9.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    padding: 20px;
+    justify-content: center;
+    height: 30vh;
+    min-width: 29.3%;
+    padding-bottom: 20px;
+
+}
+.shoe h2{
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 550px;
+    color: #fff;
+
+}
+.shoe h4{
+    padding: 10px;
+    font-size: 20px;
+    color: red;
+
+}
+.b22{
+    background-image: url(watches/w2.jpg);
+
+}
+.b23{
+    background-image: url(watches/c1.jpg);
+}
+
+.b22 h2{
+    color: #fff;
+}
+.b23 h4{
+    color: red;
+}
+#news{
+    padding: 40px 80px;
+    background-color: #003049;
+    display: flex;
+    justify-content: space-between;
+}
+.email{
+    padding: 15px 15px;
+
+}
+.sign h2{
+    color: #fff;
+    font-size: 25px;
+    padding: 12px;
+}
+.sign p{
+    color: #fff;
+    font-size: 18px;
+    padding: 12px;
+}
+.sign span{
+    color: #ffff00;
+}
+.email input{
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    width: 100%;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 20px;
+    border: 1px solid transparent;
+    outline: none;
+}
+.email{
+    display: flex;
+    width: 40%;
+
+}
+.email button{
+    height: 3.225rem;
+    padding: 0 1.25rem;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: #088178;
+    margin-top: 0px;
+    
+    transition: 0.4s ease;
+}
+.para{
+    margin-top: 5%;
+   justify-content: center;
+   align-content: center;
+}
+footer{
+    padding: 40px 80px;
+}
+.l2{
+    font-size: 20px;
+    padding-right: 10px;
+
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.coll{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+}
+.coll h4{
+    font-size: 15px;
+    padding-bottom: 20px;
+    
+}
+.coll p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+.follow{
+    padding-bottom: 10px;
+
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+.iconn{
+    padding-top: 20px;
+}
+.iconn i{
+    color: #222;
+    padding-right: 8px;
+    cursor: pointer;
+    row-gap: 10px;
+    transition: 0.3s ease;
+}
+.iconn i:hover{
+    color: orangered;
+}
+.app img{
+    cursor: pointer;
+    padding-right: 10px;
+    margin-bottom: 10px;
+
+}
+.cose{
+    margin-bottom: 10px;
+
+}
+.cose img{
+    padding-bottom: 10px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+}
+.copyright{
+    text-align: center;
+    font-size: 13px;
+}
+
+
+
+
+
+
+@media (max-width:799px){
+    #product {
+        padding: 40px 40px;
+        
+    }
+
+    .log {
+        color: orangered;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 10px 10px;
+        padding-bottom: 10px;
+    }
+    #head{
+        align-items: flex-start;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        list-style: none;
+        position: relative;
+        top: 5px;
+        right: -300px;
+        height: 100vh;
+        width: 350px;
+        background-color: #e0e1dd;
+        box-shadow: 0px 40px 60px rgb(0, 0, 0, 0.2);
+        padding: 80px 0px 0px 10px;
+        transition: 0.3s ease;
+        
+    }
+    #head.active{
+        right: -10px
+    }
+    
+    .header li{
+        margin-bottom: 30px;
+    }
+    #mobile{
+        display: flex;
+        position: fixed;
+        top: 0;
+        margin-left: 380px;
+        margin-top: 30px;
+        align-items: center;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 25px;
+        padding-left: 20px;
+    }
+    #bar{
+        cursor: pointer;
+    }
+    
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 25px;
+        font-weight: 800;
+    }
+    #lg-bag{
+        display: none;
+    }
+    #hero {
+        background-repeat: no-repeat;
+        height: 60vh;
+        padding: 0px 80px;
+        background-position: top 30% right 30%;  
+    }
+    .itm {
+        color: #fff;
+        font-weight: 300;
+    }
+    #Feature {
+        padding: 40px 40px;
+    }
+    #Feature {
+        margin-right: 120px;
+        flex-wrap: wrap;
+        justify-content: center;
+        line-height: 10px;
+        row-gap: 25px;
+    
+    }
+    .cont {
+        margin: 25px 25px;
+    }
+    .pro-content {
+        margin-right: 180px;
+        gap: 40px;
+        justify-content: center;
+        grid-template-columns: repeat(2, 250px);
+    }
+    .fe-pro {
+       row-gap: 25px;
+    }
+    .head {
+        margin-right: 180px;
+        text-align: center;
+        padding-bottom: 10px;
+        padding: 40px 40px;
+    }
+    .repair h3 {
+        margin-right: 180px;
+        padding: 5px 0px;
+    }
+    .butt {
+        margin-right: 180px;
+        padding: 10px 0px;
+    }
+    #banner {
+        padding: 40px 40px;
+    }
+    #banner {
+        margin-right: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .class-banner {
+        padding: 10px;
+        margin-right: -10px;
+        height: 30vh;
+        width: 100%;  
+    }
+    #banner1 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        margin-right: 180px;
+        height: 90vh;
+        padding: 40px 80px;
+        margin-bottom: 90px;
+        
+    }
+    .c-ban {
+        height: 50vh;
+        width: 100%;
+       
+    }
+    
+        
+    #ban-shoe {
+        display: grid;
+        padding: 40px 80px;
+        margin-right: 180px;
+        gap: 15px;
+    }
+    .shoe {
+        
+        padding: 50px;
+        height: 20vh;
+        width: 100%;
+       
+    }
+    #news {
+        padding: 40px 40px;
+        width: 70%; 
+    }
+    .email {
+        width: 120%;
+    }
+    .email {
+        padding: 16px 16px;
+    }
+    .email button {
+        height: 3.325rem;
+        padding: 0 1.25rem;
+        font-size: 18px;
+    }
+    .coll {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 60px;
+    }
+    footer {
+        margin-right: 50px;
+        padding: 40px 40px;
+        justify-content: center;
+    }
+    
+    
+
+  
+
+}
+
+
+
+

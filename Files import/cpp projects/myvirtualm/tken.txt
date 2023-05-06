@@ -1,0 +1,7 @@
+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
+
+git clone https://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@github.com/Gatjuat-Wicteat-Riek/alx-low_level_programming.git
+
+
+
+https://github.com/Gatjuat-Wicteat-Riek/alx-low_level_programming.git

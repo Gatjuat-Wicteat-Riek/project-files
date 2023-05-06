@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="TRUST"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-19 11:29:32 AM"/>
+        <attribute name="created" value="VFJVU1Q7REVTS1RPUC1TVkJSSEQ4OzIwMjEtMTEtMTk7MTA6MTM6MTUgQU07Mjc3MQ=="/>
+        <attribute name="edited" value="VFJVU1Q7REVTS1RPUC1TVkJSSEQ4OzIwMjEtMTEtMTk7MTE6Mjk6MzIgQU07MTsyODg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="True" size="100"/>
+            <output expression="&quot;Enter first item: &quot;" newline="True"/>
+            <declare name="i, min" type="Integer" array="False" size=""/>
+            <input variable="min"/>
+            <for variable="i" start="1" end="99" direction="inc" step="1">
+                <output expression="&quot;Enter next item: &quot;" newline="True"/>
+                <input variable="n[i]"/>
+                <if expression="n[i]&lt;min">
+                    <then>
+                        <assign variable="min" expression="n[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;The minimum number is: &quot;&amp;min" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="TRUST"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-19 12:03:11 PM"/>
+        <attribute name="created" value="VFJVU1Q7REVTS1RPUC1TVkJSSEQ4OzIwMjEtMTEtMTk7MTA6MTM6MTUgQU07Mjc3MQ=="/>
+        <attribute name="edited" value="VFJVU1Q7REVTS1RPUC1TVkJSSEQ4OzIwMjEtMTEtMTk7MTI6MDM6MTEgUE07MjsyODky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="h1, m1, s1, h2, m2, s2, ansH, ansM, ansS, tmp, tmp2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter hours,minutes,seconds for the first time: &quot;" newline="True"/>
+            <input variable="h1"/>
+            <input variable="m1"/>
+            <input variable="s1"/>
+            <output expression="&quot;Enter hours,minutes,seconds for the second time: &quot;" newline="True"/>
+            <input variable="h2"/>
+            <input variable="m2"/>
+            <input variable="s2"/>
+            <assign variable="tmp" expression="0"/>
+            <assign variable="tmp2" expression="0"/>
+            <if expression="s2&gt;s1">
+                <then>
+                    <assign variable="ansS" expression="60-s2+s1"/>
+                    <assign variable="tmp" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="ansS" expression="s1-s2"/>
+                </else>
+            </if>
+            <if expression="m2&gt;m1">
+                <then>
+                    <assign variable="ansM" expression="60-m2+m1"/>
+                    <assign variable="tmp2" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="ansM" expression="m1-m2"/>
+                </else>
+            </if>
+            <assign variable="ansM" expression="ansM-tmp"/>
+            <assign variable="ansH" expression="h1-h2-tmp2"/>
+            <output expression="&quot;The diffrene = &quot;&amp; ansH &amp;&quot;,&quot; &amp; ansM &amp;&quot;,&quot;&amp;ansS&amp;&quot;,&quot;" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>

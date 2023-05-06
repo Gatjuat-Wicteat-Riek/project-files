@@ -1,0 +1,4 @@
+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
+
+
+git clone https://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@github.com/Gatjuat-Wicteat-Riek/zero_day

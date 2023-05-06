@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="TRUST"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-19 12:15:05 PM"/>
+        <attribute name="created" value="VFJVU1Q7REVTS1RPUC1TVkJSSEQ4OzIwMjEtMTEtMTk7MTI6MTA6NTQgUE07Mjc4OA=="/>
+        <attribute name="edited" value="VFJVU1Q7REVTS1RPUC1TVkJSSEQ4OzIwMjEtMTEtMTk7MTI6MTU6MDUgUE07MTsyODk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter your mark : &quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n&gt;=70&amp;&amp;n&lt;=100">
+                <then>
+                    <output expression="&quot;your grade is : A&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="n&gt;=50&amp;&amp;n&lt;70">
+                <then>
+                    <output expression="&quot;your grade is : B&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="n&gt;=40&amp;&amp;n&lt;50">
+                <then>
+                    <output expression="&quot;your grade is : D&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="n&lt;40">
+                <then>
+                    <output expression="&quot;your grade is : F&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
